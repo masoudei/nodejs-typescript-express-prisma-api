@@ -1,0 +1,126 @@
+{
+	"info": {
+		"_postman_id": "85829b84-eb78-48a7-abd1-386917afe809",
+		"name": "Prisma API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2863599"
+	},
+	"item": [
+		{
+			"name": "All Posts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3003/posts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"ywhertesrtsertert\",\r\n    \"published\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3003/posts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Post",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"11111111111Heeeeeeeeeee\",\r\n    \"published\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3003/posts/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"posts",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GEt Post By ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3003/posts/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"posts",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Post",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3003/posts/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"posts",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
